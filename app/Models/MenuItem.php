@@ -83,6 +83,18 @@ class MenuItem extends Model
         return $this->children()->active()->count() > 0;
     }
 
+    public function descendants()
+    {
+        $descendants = collect();
+        
+        foreach ($this->children as $child) {
+            $descendants->push($child);
+            $descendants = $descendants->merge($child->descendants());
+        }
+        
+        return $descendants;
+    }
+
     public static function getMenuByLocation($location)
     {
         return static::active()
