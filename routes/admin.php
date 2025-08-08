@@ -19,15 +19,16 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     // Piano inventory management
     Route::resource('pianos', PianoController::class);
     Route::post('pianos/{piano}/toggle-featured', [PianoController::class, 'toggleFeatured'])->name('pianos.toggle-featured');
+    Route::get('pianos-export', [PianoController::class, 'export'])->name('pianos.export');
+    Route::get('pianos-import', [PianoController::class, 'showImportForm'])->name('pianos.import.form');
+    Route::post('pianos-import', [PianoController::class, 'import'])->name('pianos.import');
     
     // Blog management
     Route::resource('blog-posts', BlogPostController::class);
     Route::post('blog-posts/{blogPost}/toggle-publish', [BlogPostController::class, 'togglePublish'])->name('blog-posts.toggle-publish');
     
     // Menu management
-    Route::get('menus', [MenuController::class, 'index'])->name('menus.index');
-    Route::post('menus', [MenuController::class, 'store'])->name('menus.store');
-    Route::put('menus/{menuItem}', [MenuController::class, 'update'])->name('menus.update');
-    Route::delete('menus/{menuItem}', [MenuController::class, 'destroy'])->name('menus.destroy');
-    Route::post('menus/reorder', [MenuController::class, 'reorder'])->name('menus.reorder');
+    Route::resource('menu', MenuController::class)->parameters(['menu' => 'menu']);
+    Route::post('menu/reorder', [MenuController::class, 'reorder'])->name('menu.reorder');
+    Route::patch('menu/{menu}/toggle', [MenuController::class, 'toggle'])->name('menu.toggle');
 });

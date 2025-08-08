@@ -65,32 +65,32 @@ Before we begin on the Admin Panel, I want to set a couple of ground rules.
 - I want the content sections to use TipTap (https://tiptap.dev/docs/editor/getting-started/overview)
 - I like old school CRUD apps with minimal javascript.  Use stimulus.js if js is nescessary, but prefer controllers, forms and anchor tags.
 - I like to keep controllers to either be invokable controllers or to use laravel resource method names.  No custom methods if they can be avoided.
-9. [ ] Set up admin routes with authentication
-10. [ ] Create AdminController base class
-11. [ ] Build admin layout template
-12. [ ] Implement admin dashboard
+9. [x] Set up admin routes with authentication
+10. [x] Create AdminController base class
+11. [x] Build admin layout template
+12. [x] Implement admin dashboard
 
 ### Page Management
-13. [ ] Create PageController with CRUD operations
-14. [ ] Build page listing with tree view
-15. [ ] Implement create/edit forms with dynamic fields based on page_type
-16. [ ] Add drag-and-drop reordering (using Sortable.js)
-17. [ ] Implement publish/unpublish functionality
-18. [ ] Add page preview feature
+13. [x] Create PageController with CRUD operations
+14. [x] Build page listing with tree view
+15. [x] Implement create/edit forms with dynamic fields based on page_type
+16. [x] Add drag-and-drop reordering (using Sortable.js)
+17. [x] Implement publish/unpublish functionality
+18. [x] Add page preview feature
 
 ### Menu Builder
-19. [ ] Create MenuController for menu management
-20. [ ] Build visual menu editor interface
-21. [ ] Implement drag-and-drop menu item reordering
-22. [ ] Add support for nested menu items (dropdowns)
-23. [ ] Create menu item types (page link, external URL, custom)
+19. [x] Create MenuController for menu management
+20. [x] Build visual menu editor interface
+21. [x] Implement drag-and-drop menu item reordering
+22. [x] Add support for nested menu items (dropdowns)
+23. [x] Create menu item types (page link, external URL, custom)
 
 ### Piano Inventory Management
-24. [ ] Create PianoController with CRUD operations
-25. [ ] Build piano listing with filters (new/used, brand, price range)
-26. [ ] Implement image upload for piano galleries
-27. [ ] Add featured piano management
-28. [ ] Create bulk import/export functionality
+24. [x] Create PianoController with CRUD operations
+25. [x] Build piano listing with filters (new/used, brand, price range)
+26. [x] Implement image upload for piano galleries
+27. [x] Add featured piano management
+28. [x] Create bulk import/export functionality
 
 ### Blog Management
 29. [ ] Create BlogPostController with CRUD operations
