@@ -15,7 +15,7 @@
             <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
                 <div class="text-5xl mb-4">🔧</div>
                 <h3 class="text-xl font-bold mb-2">Piano Tuning & Repair</h3>
-                <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center mt-4">
+                <a href="#" class="text-green-700 hover:text-green-800 font-semibold inline-flex items-center mt-4">
                     Learn More
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -27,7 +27,7 @@
             <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
                 <div class="text-5xl mb-4">🚚</div>
                 <h3 class="text-xl font-bold mb-2">Piano Moving & Storage</h3>
-                <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center mt-4">
+                <a href="#" class="text-green-700 hover:text-green-800 font-semibold inline-flex items-center mt-4">
                     Learn More
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -39,7 +39,7 @@
             <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
                 <div class="text-5xl mb-4">🏠</div>
                 <h3 class="text-xl font-bold mb-2">Climate Control Systems</h3>
-                <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center mt-4">
+                <a href="#" class="text-green-700 hover:text-green-800 font-semibold inline-flex items-center mt-4">
                     Learn More
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -51,7 +51,7 @@
             <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
                 <div class="text-5xl mb-4">📚</div>
                 <h3 class="text-xl font-bold mb-2">Piano Lessons & Rentals</h3>
-                <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center mt-4">
+                <a href="#" class="text-green-700 hover:text-green-800 font-semibold inline-flex items-center mt-4">
                     Learn More
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>

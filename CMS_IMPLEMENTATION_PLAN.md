@@ -93,11 +93,11 @@ Before we begin on the Admin Panel, I want to set a couple of ground rules.
 28. [x] Create bulk import/export functionality
 
 ### Blog Management
-29. [ ] Create BlogPostController with CRUD operations
-30. [ ] Build blog post editor with rich text editing
-31. [ ] Implement category management
-32. [ ] Add featured image upload
-33. [ ] Create scheduling for future posts
+29. [x] Create BlogPostController with CRUD operations
+30. [x] Build blog post editor with rich text editing (TipTap)
+31. [x] Implement category management
+32. [x] Add featured image upload
+33. [x] Create scheduling for future posts
 
 ## Phase 3: Frontend Integration
 

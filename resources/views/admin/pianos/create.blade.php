@@ -71,6 +71,27 @@
 
                     <div class="form-control">
                         <label class="label">
+                            <span class="label-text font-medium">Category</span>
+                        </label>
+                        <select name="category_id" class="select select-bordered @error('category_id') select-error @enderror" id="category-select">
+                            <option value="">Select category</option>
+                            @foreach($categories as $category)
+                                <option value="{{ $category->id }}" 
+                                        data-show-prices="{{ $category->show_prices ? 'true' : 'false' }}"
+                                        {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                    {{ $category->name }}
+                                </option>
+                            @endforeach
+                        </select>
+                        @error('category_id')
+                            <label class="label">
+                                <span class="label-text-alt text-red-500">{{ $message }}</span>
+                            </label>
+                        @enderror
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label">
                             <span class="label-text font-medium">Year</span>
                         </label>
                         <input type="number" 
@@ -87,9 +108,10 @@
                         @enderror
                     </div>
 
-                    <div class="form-control">
+                    <div class="form-control" id="price-field">
                         <label class="label">
-                            <span class="label-text font-medium">Price <span class="text-red-500">*</span></span>
+                            <span class="label-text font-medium">Price <span id="price-required" class="text-red-500 hidden">*</span></span>
+                            <span class="label-text-alt" id="price-note"></span>
                         </label>
                         <input type="number" 
                                name="price" 
@@ -98,7 +120,7 @@
                                placeholder="0.00" 
                                step="0.01" 
                                min="0" 
-                               required>
+                               id="price-input">
                         @error('price')
                             <label class="label">
                                 <span class="label-text-alt text-red-500">{{ $message }}</span>
@@ -246,6 +268,32 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle category change to show/hide price requirements
+    const categorySelect = document.getElementById('category-select');
+    const priceInput = document.getElementById('price-input');
+    const priceRequired = document.getElementById('price-required');
+    const priceNote = document.getElementById('price-note');
+    
+    function updatePriceField() {
+        const selectedOption = categorySelect.options[categorySelect.selectedIndex];
+        const showPrices = selectedOption.dataset.showPrices === 'true';
+        
+        if (showPrices) {
+            priceRequired.classList.remove('hidden');
+            priceInput.setAttribute('required', 'required');
+            priceNote.textContent = 'Price will be displayed';
+        } else {
+            priceRequired.classList.add('hidden');
+            priceInput.removeAttribute('required');
+            priceNote.textContent = 'Price will not be shown publicly';
+        }
+    }
+    
+    if (categorySelect) {
+        categorySelect.addEventListener('change', updatePriceField);
+        updatePriceField(); // Initial check
+    }
+    
     // Handle specifications as array
     const specsTextarea = document.querySelector('textarea[name="specifications[]"]');
     if (specsTextarea) {

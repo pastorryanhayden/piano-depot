@@ -12,6 +12,7 @@ class Piano extends Model
     protected $fillable = [
         'brand',
         'model',
+        'category_id',
         'year',
         'price',
         'condition',
@@ -55,5 +56,23 @@ class Piano extends Model
     public function getMainImageAttribute()
     {
         return $this->featured_image ?: '/images/placeholder-piano.jpg';
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(PianoCategory::class, 'category_id');
+    }
+
+    public function shouldShowPrice()
+    {
+        return $this->category && $this->category->show_prices;
+    }
+
+    public function getDisplayPriceAttribute()
+    {
+        if ($this->shouldShowPrice()) {
+            return $this->formatted_price;
+        }
+        return 'Contact for Price';
     }
 }

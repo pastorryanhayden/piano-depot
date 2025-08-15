@@ -17,7 +17,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Grand Pianos</h3>
                     <p class="text-gray-600 mb-4">From $15,000</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center">
+                    <a href="#" class="text-green-700 hover:text-green-800 font-semibold flex items-center">
                         Explore
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -32,7 +32,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Upright Pianos</h3>
                     <p class="text-gray-600 mb-4">From $3,000</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center">
+                    <a href="#" class="text-green-700 hover:text-green-800 font-semibold flex items-center">
                         Explore
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -47,7 +47,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Digital Pianos</h3>
                     <p class="text-gray-600 mb-4">From $1,000</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center">
+                    <a href="#" class="text-green-700 hover:text-green-800 font-semibold flex items-center">
                         Explore
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -62,7 +62,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Used & Refurbished</h3>
                     <p class="text-gray-600 mb-4">From $400</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center">
+                    <a href="#" class="text-green-700 hover:text-green-800 font-semibold flex items-center">
                         Explore
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -73,10 +73,10 @@
         </div>
 
         <div class="text-center space-x-4">
-            <a href="/pianos" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition">
+            <a href="/pianos" class="inline-block bg-green-700 text-white px-8 py-3 rounded-md hover:bg-green-800 transition">
                 View All Pianos
             </a>
-            <a href="/compare" class="inline-block border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-md hover:bg-blue-600 hover:text-white transition">
+            <a href="/compare" class="inline-block border-2 border-green-700 text-green-700 px-8 py-3 rounded-md hover:bg-green-700 hover:text-white transition">
                 Compare Pianos
             </a>
         </div>
