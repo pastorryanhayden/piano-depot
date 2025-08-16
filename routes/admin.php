@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\PianoController;
+use App\Http\Controllers\Admin\PianoCategoryController;
 use App\Http\Controllers\Admin\BlogPostController;
+use App\Http\Controllers\Admin\BlogCategoryController;
 use App\Http\Controllers\Admin\MenuController;
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
@@ -16,6 +18,10 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::post('pages/{page}/toggle-publish', [PageController::class, 'togglePublish'])->name('pages.toggle-publish');
     Route::post('pages/reorder', [PageController::class, 'reorder'])->name('pages.reorder');
     
+    // Piano categories management
+    Route::resource('piano-categories', PianoCategoryController::class);
+    Route::post('piano-categories/reorder', [PianoCategoryController::class, 'reorder'])->name('piano-categories.reorder');
+    
     // Piano inventory management
     Route::resource('pianos', PianoController::class);
     Route::post('pianos/{piano}/toggle-featured', [PianoController::class, 'toggleFeatured'])->name('pianos.toggle-featured');
@@ -26,6 +32,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     // Blog management
     Route::resource('blog-posts', BlogPostController::class);
     Route::post('blog-posts/{blogPost}/toggle-publish', [BlogPostController::class, 'togglePublish'])->name('blog-posts.toggle-publish');
+    
+    // Blog categories
+    Route::resource('blog-categories', BlogCategoryController::class)->except(['show']);
     
     // Menu management
     Route::resource('menu', MenuController::class)->parameters(['menu' => 'menu']);

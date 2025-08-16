@@ -1,5 +1,5 @@
 <!-- Hero Section -->
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
     <!-- Video Background -->
     <div class="absolute inset-0 bg-gray-900">
         <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
@@ -19,7 +19,7 @@
         <p class="text-xl md:text-2xl mb-8">
             Over 40 Years of Helping Musicians Find Their Voice
         </p>
-        <a href="/appointment" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105">
+        <a href="/appointment" class="inline-block bg-green-700 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-green-800 transition transform hover:scale-105">
             SCHEDULE YOUR CONSULTATION
         </a>
         <p class="mt-4 text-lg">

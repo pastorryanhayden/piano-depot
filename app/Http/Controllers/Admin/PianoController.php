@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Piano;
+use App\Models\PianoCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -50,8 +51,10 @@ class PianoController extends Controller
             'used' => 'Used',
             'restored' => 'Restored'
         ];
+        
+        $categories = PianoCategory::active()->ordered()->get();
 
-        return view('admin.pianos.create', compact('conditions'));
+        return view('admin.pianos.create', compact('conditions', 'categories'));
     }
 
     public function store(Request $request)
@@ -59,8 +62,9 @@ class PianoController extends Controller
         $validated = $request->validate([
             'brand' => 'required|string|max:255',
             'model' => 'required|string|max:255',
+            'category_id' => 'nullable|exists:piano_categories,id',
             'year' => 'nullable|integer|min:1800|max:' . (date('Y') + 1),
-            'price' => 'required|numeric|min:0',
+            'price' => 'nullable|numeric|min:0',
             'condition' => 'required|in:new,used,restored',
             'description' => 'nullable|string',
             'specifications' => 'nullable|array',
@@ -114,8 +118,10 @@ class PianoController extends Controller
             'used' => 'Used',
             'restored' => 'Restored'
         ];
+        
+        $categories = PianoCategory::active()->ordered()->get();
 
-        return view('admin.pianos.edit', compact('piano', 'conditions'));
+        return view('admin.pianos.edit', compact('piano', 'conditions', 'categories'));
     }
 
     public function update(Request $request, Piano $piano)
@@ -123,8 +129,9 @@ class PianoController extends Controller
         $validated = $request->validate([
             'brand' => 'required|string|max:255',
             'model' => 'required|string|max:255',
+            'category_id' => 'nullable|exists:piano_categories,id',
             'year' => 'nullable|integer|min:1800|max:' . (date('Y') + 1),
-            'price' => 'required|numeric|min:0',
+            'price' => 'nullable|numeric|min:0',
             'condition' => 'required|in:new,used,restored',
             'description' => 'nullable|string',
             'specifications' => 'nullable|array',

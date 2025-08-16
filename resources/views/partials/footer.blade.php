@@ -57,7 +57,7 @@
                 <h3 class="text-white font-bold mb-4">Contact Us</h3>
                 <p>570-352-5501</p>
                 <p>info@pianodepot.com</p>
-                <a href="/appointment" class="text-blue-400 hover:text-blue-300 transition">Schedule Appointment</a>
+                <a href="/appointment" class="text-green-400 hover:text-green-300 transition">Schedule Appointment</a>
             </div>
             <div>
                 <h3 class="text-white font-bold mb-4">Connect</h3>
