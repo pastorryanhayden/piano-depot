@@ -47,15 +47,25 @@
                     <a href="/our-story" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition">
                         Read Our Story
                     </a>
-                    <a href="/meet-frank" class="inline-block border-2 border-gray-800 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-800 hover:text-white transition">
+                    <button onclick="openVideoModal()" class="inline-block border-2 border-gray-800 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-800 hover:text-white transition">
                         Meet Frank
-                    </a>
+                    </button>
                 </div>
             </div>
 
             <!-- Right Content - Frank's Photo -->
             <div class="bg-gray-100 rounded-lg p-8 text-center">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Frank Bissol" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                <div class="relative inline-block cursor-pointer group" onclick="openVideoModal()">
+                    <img src="{{ file_exists(public_path('images/frank-playing-piano.jpg')) ? asset('images/frank-playing-piano.jpg') : asset('images/frank-playing-piano.svg') }}" alt="Frank Bissol" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <!-- Play button overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="bg-white bg-opacity-90 rounded-full p-4 shadow-lg transform group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
                 <blockquote class="text-xl italic mb-4">
                     "Every piano has a story.<br>
                     Let me help you write yours."
