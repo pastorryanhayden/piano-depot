@@ -1,5 +1,5 @@
 <!-- Announcement Bar -->
-<div class="bg-gray-900 text-white text-sm py-2">
+<div class="bg-black text-white text-sm py-2">
     <div class="container mx-auto px-4 text-center">
         <span class="inline-flex items-center space-x-4">
             <span>📞 570-352-5501</span>
@@ -26,7 +26,7 @@
             <!-- Main Navigation -->
             <div class="hidden lg:flex items-center space-x-8">
                 <div class="relative group">
-                    <button class="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
+                    <button class="flex items-center space-x-1 text-black hover:text-[#725CA7]">
                         <span>About Us</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -34,7 +34,7 @@
                     </button>
                 </div>
                 <div class="relative group">
-                    <button class="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
+                    <button class="flex items-center space-x-1 text-black hover:text-[#725CA7]">
                         <span>Pianos</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -42,7 +42,7 @@
                     </button>
                 </div>
                 <div class="relative group">
-                    <button class="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
+                    <button class="flex items-center space-x-1 text-black hover:text-[#725CA7]">
                         <span>Services</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -50,7 +50,7 @@
                     </button>
                 </div>
                 <div class="relative group">
-                    <button class="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
+                    <button class="flex items-center space-x-1 text-black hover:text-[#725CA7]">
                         <span>Resources</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -58,14 +58,14 @@
                     </button>
                 </div>
                 <div class="relative group">
-                    <button class="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
+                    <button class="flex items-center space-x-1 text-black hover:text-[#725CA7]">
                         <span>Contact</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                 </div>
-                <a href="/appointment" class="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-800 transition">
+                <a href="/appointment" class="bg-[#CC2E23] text-white px-6 py-2 rounded-md hover:bg-[#E6352A] transition">
                     Schedule Appointment
                 </a>
             </div>
