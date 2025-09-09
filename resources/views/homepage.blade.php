@@ -3,6 +3,7 @@
 @section('content')
     @include('partials.header')
     @include('partials.hero')
+    @include('partials.promotions')
     @include('partials.persona-navigation')
     @include('partials.trust-building')
     @include('partials.featured-pianos')

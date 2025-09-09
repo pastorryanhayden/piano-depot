@@ -19,7 +19,7 @@
         <p class="text-xl md:text-2xl mb-8">
             Over 40 Years of Helping Musicians Find Their Voice
         </p>
-        <a href="/appointment" class="inline-block bg-green-700 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-green-800 transition transform hover:scale-105">
+        <a href="/appointment" class="inline-block bg-[#CC2E23] text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-[#E6352A] transition transform hover:scale-105">
             SCHEDULE YOUR CONSULTATION
         </a>
         <p class="mt-4 text-lg">
