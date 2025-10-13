@@ -64,7 +64,7 @@
             </svg>
         </button>
 
-        <x-mobile-dropdown-menu-item label="About Us" :showChevron="false" :first="true">
+        <x-mobile-dropdown-menu-item label="About Us" :first="true">
             <a href="#">Something</a>
         </x-mobile-dropdown-menu-item>
 
