@@ -14,7 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" x-data="{showMobileMenu: false}" >
         <div class="min-h-screen bg-gray-100">
 
 
@@ -37,12 +37,12 @@
         <div id="videoModal" class="fixed inset-0 z-50 hidden">
             <!-- Semi-transparent background overlay -->
             <div class="fixed inset-0 bg-black/80" onclick="closeVideoModal()"></div>
-            
+
             <!-- Modal content -->
             <div class="fixed inset-0 flex items-center justify-center p-4" onclick="closeVideoModal()">
                 <div class="relative w-full max-w-4xl bg-black rounded-lg shadow-xl" onclick="event.stopPropagation()">
                     <div class="relative" style="padding-bottom: 56.25%;">
-                        <iframe id="youtubeVideo" 
+                        <iframe id="youtubeVideo"
                                 class="absolute top-0 left-0 w-full h-full rounded-lg"
                                 src=""
                                 frameborder="0"
@@ -63,10 +63,10 @@
             function openVideoModal() {
                 const modal = document.getElementById('videoModal');
                 const iframe = document.getElementById('youtubeVideo');
-                
+
                 // Set the YouTube video URL with autoplay
                 iframe.src = 'https://www.youtube.com/embed/uV_Mna9EEY0?autoplay=1';
-                
+
                 // Show the modal
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
@@ -75,10 +75,10 @@
             function closeVideoModal() {
                 const modal = document.getElementById('videoModal');
                 const iframe = document.getElementById('youtubeVideo');
-                
+
                 // Clear the iframe src to stop the video
                 iframe.src = '';
-                
+
                 // Hide the modal
                 modal.classList.add('hidden');
                 document.body.style.overflow = 'auto';
